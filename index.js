@@ -12,7 +12,7 @@ app.use(express.json())
 
 //conectar Mongo
 mongoose.connect(process.env.MONGO_URI)
-  .then(() => console.log("Mongo conectado 🚀"))
+  .then(() => console.log("Mongo conectado con exito"))
   .catch(err => console.log("Error Mongo:", err))
 
 //ruta base
