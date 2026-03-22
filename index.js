@@ -3,34 +3,27 @@ const express = require("express")
 const mongoose = require("mongoose")
 const cors = require("cors")
 
-const Card = require("./models/Card")
+const cardRoutes = require("./routes/cardRoutes")
 
 const app = express()
 
 app.use(cors())
 app.use(express.json())
 
-// 🔌 conectar a Mongo
+//conectar Mongo
 mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("Mongo conectado 🚀"))
   .catch(err => console.log("Error Mongo:", err))
 
-// 🧪 ruta de prueba
+//ruta base
 app.get("/", (req, res) => {
-  res.send("API FanQuot funcionando 🚀")
+  res.send("API FanQuot funcionando")
 })
 
-// 📥 GET cards (LO IMPORTANTE)
-app.get("/cards", async (req, res) => {
-  try {
-    const cards = await Card.find()
-    res.json(cards)
-  } catch (error) {
-    res.status(500).json({ error: "Error al obtener cards" })
-  }
-})
+//rutas moduladas
+app.use("/cards", cardRoutes)
 
-// 🚀 levantar servidor
+//levantar servidor
 const PORT = process.env.PORT || 4000
 
 app.listen(PORT, () => {
