@@ -29,6 +29,17 @@ const createCard = async (req, res) => {
   }
 }
 
+const deleteCard =async (req, res)=>{
+  try {
+    const {id} = req.params
+    await Card.findByIdAndDelete(id)
+    res.json({message:"Card eliminada con exito"})
+  } catch (error) {
+    console.error(error)
+    res.status(500).json({error: "Error al eliminar la card"})
+  }
+}
+
 module.exports = {
     getCards,
     createCard
