@@ -11,15 +11,22 @@ const getCards = async (req, res) => {
 }
 
 //Post
-const createCard = async(req, res)=>{
-    try {
-        const newCard = newCard(req.body)
-        await newCard.save()
+const createCard = async (req, res) => {
+  try {
+    console.log("BODY RECIBIDO:", req.body)
 
-        res.status(201).json(newCard)
-    } catch (error){
-        res.status(500).json({error: "Error al crear la card"})
-    }
+    const newCard = new Card(req.body) // 👈 PRIMERO crear
+
+    await newCard.save() // 👈 LUEGO guardar
+
+    console.log("CARD GUARDADA:", newCard) // 👈 AHORA sí usarla
+
+    res.status(201).json(newCard)
+
+  } catch (error) {
+    console.error("ERROR BACKEND:", error)
+    res.status(500).json({ error: "Error al crear card" })
+  }
 }
 
 module.exports = {
