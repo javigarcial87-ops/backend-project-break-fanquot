@@ -8,6 +8,7 @@ const cardSchema = new mongoose.Schema({
   quote: String,
   likes: Number,
   likedBy: [String]
-})
+ 
+}, {timestamps:true})
 
 module.exports = mongoose.model("Card", cardSchema)

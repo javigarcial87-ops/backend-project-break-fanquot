@@ -1,25 +1,25 @@
 const Card = require("../models/Card")
 
-//Get
+//GET obtener las cards y mostrarlas
 const getCards = async (req, res) => {
   try {
-    const cards = await Card.find()
+    const cards = await Card.find().sort({createdAt:-1})
     res.json(cards)
   } catch (error) {
     res.status(500).json({ error: "Error al obtener cards" })
   }
 }
 
-//Post
+//POST Crear una nueva card
 const createCard = async (req, res) => {
   try {
     console.log("BODY RECIBIDO:", req.body)
 
-    const newCard = new Card(req.body) // 👈 PRIMERO crear
+    const newCard = new Card(req.body) 
 
-    await newCard.save() // 👈 LUEGO guardar
+    await newCard.save() 
 
-    console.log("CARD GUARDADA:", newCard) // 👈 AHORA sí usarla
+    console.log("CARD GUARDADA:", newCard) 
 
     res.status(201).json(newCard)
 
@@ -29,7 +29,8 @@ const createCard = async (req, res) => {
   }
 }
 
-const deleteCard =async (req, res)=>{
+//DELETE Borrar cards
+const deleteCard = async (req, res)=>{
   try {
     const {id} = req.params
     await Card.findByIdAndDelete(id)

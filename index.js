@@ -10,20 +10,20 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-//conectar Mongo
+
 mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("Mongo conectado con exito"))
   .catch(err => console.log("Error Mongo:", err))
 
-//ruta base
+
 app.get("/", (req, res) => {
   res.send("API FanQuot funcionando")
 })
 
-//rutas moduladas
+
 app.use("/cards", cardRoutes)
 
-//levantar servidor
+
 const PORT = process.env.PORT || 4000
 
 app.listen(PORT, () => {
