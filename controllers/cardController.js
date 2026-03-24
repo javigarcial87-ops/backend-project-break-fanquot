@@ -41,8 +41,30 @@ const deleteCard = async (req, res)=>{
   }
 }
 
+//LIKES 
+const likeCard = async (req, res)=> {
+  try {
+    const {id} = req.params
+    const card = await Card.findById(id)
+
+    if (!card) {
+      return res.status(404).json({error:"Card no encontrada"})
+    }
+
+    card.likes += 1
+    await card.save()
+    res.json(card)
+
+
+  } catch (error) {
+    console.error(error)
+    res.status(500).json({error: "Error al dar like"})
+  }
+}
+
 module.exports = {
     getCards,
     createCard,
-    deleteCard
+    deleteCard,
+    likeCard
 }
