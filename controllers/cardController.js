@@ -42,35 +42,46 @@ const deleteCard = async (req, res)=>{
 }
 
 //LIKES 
-const likeCard = async (req, res)=> {
+const likeCard = async (req, res) => {
   try {
-    const {id} = req.params
-    const {userId} =req.body
+    const { id } = req.params
+    const { userId } = req.body
+
     const card = await Card.findById(id)
 
     if (!card) {
-      return res.status(404).json({error:"Card no encontrada"})
+      return res.status(404).json({ error: "Card no encontrada" })
     }
 
-const alreadyLiked = card.likedBy.some (id=>id.string()===userId)
+    
+    if (!card.likedBy) {
+      card.likedBy = []
+    }
 
-if (alreadyLiked) {
-  card.likes +=1
-  card.likedBy= card.likedBy.filter(id=>id !== userId)
-} else {
-  card.likes +=1
-  card.likedBy.push(userId)
+    const alreadyLiked = card.likedBy.some(
+      (uid) => uid.toString() === userId
+    )
 
-}
+    if (alreadyLiked) {
+      
+      card.likedBy = card.likedBy.filter(
+        (uid) => uid.toString() !== userId
+      )
+    } else {
+      
+      card.likedBy.push(userId)
+    }
 
-await card.save()
+   
+    card.likes = card.likedBy.length
 
-res.json(card)
+    await card.save()
 
+    res.json(card)
 
   } catch (error) {
     console.error(error)
-    res.status(500).json({error: "Error al dar like"})
+    res.status(500).json({ error: "Error al dar like" })
   }
 }
 
