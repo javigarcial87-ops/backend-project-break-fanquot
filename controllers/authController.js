@@ -24,7 +24,12 @@ const login = async (req,res) => {
     try {
         const {email, password} = req.body
 
-        const user = await User.findOne({email})
+        const user = await User.findOne({
+            $or: [
+            { email },
+            { username: email }
+        ]
+    })
 
         if (!user) {
             return res.status(404).json({error:"usuario no encontrado"})
