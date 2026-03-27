@@ -45,13 +45,14 @@ const deleteCard = async (req, res)=>{
 const likeCard = async (req, res)=> {
   try {
     const {id} = req.params
+    const {userId} =req.body
     const card = await Card.findById(id)
 
     if (!card) {
       return res.status(404).json({error:"Card no encontrada"})
     }
 
-const alreadyLiked = card.likedBy.includes(userId)
+const alreadyLiked = card.likedBy.some (id=>id.string()===userId)
 
 if (alreadyLiked) {
   card.likes +=1
