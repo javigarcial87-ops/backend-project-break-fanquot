@@ -51,9 +51,20 @@ const likeCard = async (req, res)=> {
       return res.status(404).json({error:"Card no encontrada"})
     }
 
-    card.likes += 1
-    await card.save()
-    res.json(card)
+const alreadyLiked = card.likedBy.includes(userId)
+
+if (alreadyLiked) {
+  card.likes +=1
+  card.likedBy= card.likedBy.filter(id=>id !== userId)
+} else {
+  card.likes +=1
+  card.likedBy.push(userId)
+
+}
+
+await card.save()
+
+res.json(card)
 
 
   } catch (error) {
