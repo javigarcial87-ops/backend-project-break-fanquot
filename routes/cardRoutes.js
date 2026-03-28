@@ -7,6 +7,6 @@ router.get("/",getCards)
 router.post("/",createCard)
 router.delete("/:id", deleteCard)
 router.put("/like/:id", likeCard)
-
+router.put("/:id", updateCard)
 
 module.exports = router

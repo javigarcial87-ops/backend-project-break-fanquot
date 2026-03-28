@@ -41,7 +41,7 @@ const deleteCard = async (req, res)=>{
   }
 }
 
-//LIKES 
+//Gestión de LIKES 
 const likeCard = async (req, res) => {
   try {
     const { id } = req.params
@@ -85,9 +85,25 @@ const likeCard = async (req, res) => {
   }
 }
 
+const updateCard = async (req, res) => {
+  try {
+    const {id} = req.params
+
+    const updated = await Card.findByIdAndUpdate(
+      id,
+      req.body,
+      {new: true}
+    )
+    res.json(updated)
+  } catch (error) {
+    res.status(500).json({error: "Error al actualizar card"})
+  }
+}
+
 module.exports = {
     getCards,
     createCard,
     deleteCard,
-    likeCard
+    likeCard,
+    updateCard
 }
