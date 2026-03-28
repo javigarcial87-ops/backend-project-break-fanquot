@@ -1,6 +1,5 @@
 const express = require("express")
 const router  = express.Router()
-const {likeCard} = require("../controllers/cardController")
 const {getCards, createCard, deleteCard, likeCard, updateCard} = require("../controllers/cardController")
 
 
