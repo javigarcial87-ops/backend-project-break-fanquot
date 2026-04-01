@@ -1,4 +1,4 @@
-FanQuot
+                                                      FANQUOT-project-Break
 
 FanQuot es una aplicación web que permite explorar, crear y gestionar frases o citas famosas de personajes ficticios de distintos medios como películas, series, libros o videojuegos, presentadas en formato "card".
 
@@ -39,7 +39,7 @@ fanquot/
 │
 └── backend/    → Node.js + Express
 
-Ambos proyectos se conectarán mediante peticiones HTTP (REST API).
+Ambos proyectos se conectarán a la base de datos en MongoDBAtlas.
 
 
 ---------------------FUNCIONALIDADES PRINCIPALES--------------------
@@ -60,10 +60,17 @@ Frase o cita famosa
 
 Las cards se mostrarán inicialmente a partir de un array de objetos predefinido.
 
+LINKS del los repositorios en GITHUB
+
+FRONTEND: https://github.com/javigarcial87-ops/frontend-project-break-fanquot
+BACKEND: https://github.com/javigarcial87-ops/backend-project-break-fanquot
+
+
 LINKS de acceso:
 
 --Netlify frontend deploy: 
 https://frontend-project-break-fanquot.netlify.app/
+
 --Render backend deploy:
 https://backend-project-break-fanquot.onrender.com
 
@@ -74,9 +81,9 @@ AUTENTIFICACIÓN
 * Administrador
 * Usuario
 
-Credenciales:
+Credenciales de prueba:
 
---user
+--user(ya registrado)
 email: yo@.es
 pass: 1234
 
