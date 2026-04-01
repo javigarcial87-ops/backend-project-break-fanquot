@@ -198,6 +198,7 @@ Card destacada
 --La card con más likes aparecerá en un destacado especial:
 
 Ejemplo de estructura de una card (MongoDB)
+
 {
   "characterName": "Gandalf",
   "characterImage": "https://...",
