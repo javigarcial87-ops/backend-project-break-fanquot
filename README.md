@@ -1,11 +1,12 @@
 FanQuot
 
-FanQuot es una aplicación web que permite explorar, crear y gestionar frases o citas famosas de personajes ficticios de distintos medios como películas, series, libros o videojuegos, presentadas en formato cards.
+FanQuot es una aplicación web que permite explorar, crear y gestionar frases o citas famosas de personajes ficticios de distintos medios como películas, series, libros o videojuegos, presentadas en formato "card".
 
 Los usuarios pueden buscar citas, crear sus propias cards y votar sus favoritas, mientras que el administrador tiene permisos especiales para gestionar el contenido.
 
-Tecnologías utilizadas
-Frontend
+Tecnologías utilizadas:
+
+-- FRONTEND
 
 React
 
@@ -13,9 +14,9 @@ Vite
 
 CSS
 
-Responsive design (compatible con móvil y tablet)
+Netifly
 
-Backend
+-- BACKEND
 
 Node.js
 
@@ -24,8 +25,6 @@ Express
 Base de datos
 
 MongoDB Atlas
-
-Deploy
 
 Render
 
@@ -42,8 +41,10 @@ fanquot/
 
 Ambos proyectos se conectarán mediante peticiones HTTP (REST API).
 
-Funcionalidades principales
-Visualización de cards
+
+---------------------FUNCIONALIDADES PRINCIPALES--------------------
+
+-- Visualización de cards
 
 La aplicación mostrará una colección de cards, cada una con la siguiente información:
 
@@ -55,23 +56,36 @@ Tipo de medio (película, serie, libro o videojuego)
 
 Título del medio
 
-Frase o cita famosa (máximo ~600 caracteres)
+Frase o cita famosa
 
 Las cards se mostrarán inicialmente a partir de un array de objetos predefinido.
 
-Sistema de autenticación
+-- Sistema de autenticación
 
-La aplicación contará con login y logout.
+* Administrador
+* Usuario
 
-Usuario
+credenciales
+--user
+email: yo@.es
+pass: 1234
 
-Un usuario autenticado podrá:
+--admn
+email: administrador@fanquot.com
+pass: 123456
+
+tambien se puede registar y usar esas credenciales para acceder
+
+
+-- USUARIO
+
+Usuario logeado podrá:
 
 Crear nuevas cards mediante un formulario.
 
 Dar like a las cards.
 
-Buscar frases por personaje o medio.
+Buscar frases por personaje o título del medio en el que aparecen.
 
 Formulario de creación de cards
 
@@ -89,15 +103,15 @@ Frase o cita (máximo ~600 caracteres)
 
 Al enviar el formulario:
 
-Se crea una nueva card.
+--Se crea una nueva card en la Home.
 
-Se añade a la base de datos.
+--Se añade a la base de datos.
 
-Los datos del usuario se almacenan en localStorage.
+--Contará con un apartado "Mi pefíl" donde se guardan las cards que el usuario habra dado like.
 
-Administrador
+ADMINISTRADOR
 
-El administrador accede mediante credenciales específicas.
+Administrador accede mediante credenciales específicas.
 
 Además de las funciones de usuario, el administrador puede:
 
@@ -105,27 +119,16 @@ Panel de administrador
 
 Ver todas las cards existentes
 
-Buscar cards por:
+-- Buscar cards por:
 
-Nombre del personaje
+-Nombre del personaje
 
-Nombre del medio
+-Nombre del medio
 
-La búsqueda debe ignorar:
 
-Mayúsculas/minúsculas
+--Eliminación de cards
 
-Tildes
-
-Caracteres especiales
-
-Eliminación de cards
-
-Cada card mostrará un botón:
-
-Delete
-
-Solo visible para el administrador.
+Cada card mostrará un botón de elimminar solo visible para el administrador.
 
 Al pulsarlo:
 
@@ -133,17 +136,11 @@ La card se elimina permanentemente de la base de datos.
 
 Sistema de búsqueda
 
-La aplicación incluirá un input de búsqueda que permitirá encontrar cards por:
+La aplicación incluirá un input de búsqueda en la Home que permitirá encontrar cards por:
 
 Nombre del personaje
 
 Título del medio
-
-Características de la búsqueda:
-
-Ignora mayúsculas y minúsculas
-
-Ignora tildes
 
 Puede devolver múltiples resultados
 
@@ -159,13 +156,13 @@ un personaje con varias citas
 
 Por lo tanto, la búsqueda mostrará todas las cards coincidentes.
 
-Sistema de votos (Likes)
+-- SISTEMA DE LIKES
 
 Cada card tendrá un botón de:
 
 ❤️ Like
 
-Reglas:
+USABILIDAD:
 
 Solo usuarios logueados pueden votar
 
@@ -173,13 +170,8 @@ Cada usuario solo puede votar una vez por card
 
 Página principal
 
-La página principal mostrará:
-
-Últimas cards añadidas
-
-Las 10 últimas cards creadas por usuarios o administradores.
-
-Cards más votadas
+La página principal cuenta con una paginación donde se pueden revisar
+las cards con las que cuenta la página en ese momento
 
 Listado basado en el número de likes.
 
@@ -211,10 +203,5 @@ Auth
 POST /auth/login
 POST /auth/register
 POST /auth/logout
-Extras implementados
 
-✔ Mostrar las 10 últimas cards
-✔ Sistema de búsqueda avanzada
-✔ Sistema de likes
-✔ Frase destacada (la más votada)
-✔ Panel de administrador para eliminar cards
+
