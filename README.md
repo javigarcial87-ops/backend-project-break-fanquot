@@ -60,12 +60,22 @@ Frase o cita famosa
 
 Las cards se mostrarán inicialmente a partir de un array de objetos predefinido.
 
--- Sistema de autenticación
+LINKS de acceso:
+
+--Netlify frontend deploy: 
+https://frontend-project-break-fanquot.netlify.app/
+--Render backend deploy:
+https://backend-project-break-fanquot.onrender.com
+
+
+
+AUTENTIFICACIÓN
 
 * Administrador
 * Usuario
 
-credenciales
+Credenciales:
+
 --user
 email: yo@.es
 pass: 1234
@@ -74,7 +84,7 @@ pass: 1234
 email: administrador@fanquot.com
 pass: 123456
 
-tambien se puede registar y usar esas credenciales para acceder
+tambien se puede registar y usar esas credenciales para acceder.
 
 
 -- USUARIO
@@ -103,11 +113,12 @@ Frase o cita (máximo ~600 caracteres)
 
 Al enviar el formulario:
 
---Se crea una nueva card en la Home.
+--Se crea una nueva card en la Home(La última creada aparecerá la primera).
 
 --Se añade a la base de datos.
 
---Contará con un apartado "Mi pefíl" donde se guardan las cards que el usuario habra dado like.
+--El usuario contará con un apartado "Mi pefíl" donde se guardan las cards que el usuario habra dado like.
+
 
 ADMINISTRADOR
 
@@ -126,9 +137,9 @@ Ver todas las cards existentes
 -Nombre del medio
 
 
---Eliminación de cards
+--Eliminación y edición de cards
 
-Cada card mostrará un botón de elimminar solo visible para el administrador.
+Cada card mostrará un botón de elimminar y editar  solo visible para el administrador.
 
 Al pulsarlo:
 
@@ -205,3 +216,4 @@ POST /auth/register
 POST /auth/logout
 
 
+Autor: Javier García Álvarez
