@@ -186,11 +186,10 @@ las cards con las que cuenta la página en ese momento
 
 Listado basado en el número de likes.
 
-Frase destacada
+Card destacada
 
-La card con más votos aparecerá en una sección especial:
+--La card con más likes aparecerá en un destacado especial:
 
-Frase destacada
 Ejemplo de estructura de una card (MongoDB)
 {
   "characterName": "Gandalf",
