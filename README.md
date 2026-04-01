@@ -29,27 +29,8 @@ Deploy
 
 Render
 
-Integración de APIs externas
 
-La aplicación consumirá APIs públicas para validar o referenciar medios como:
 
-Películas
-
-Series
-
-Libros
-
-Videojuegos
-
-Ejemplos posibles:
-
-TMDB API (películas y series)
-
-Google Books API
-
-RAWG API (videojuegos)
-
-Arquitectura del proyecto
 
 El proyecto estará dividido en dos repositorios:
 

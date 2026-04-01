@@ -4,8 +4,8 @@
   "description": "FanQuot",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "start": "node index.js"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/javigarcial87-ops/backend-project-break-fanquot.git"
