@@ -137,10 +137,9 @@ _________________________________________
 
   --Se crean una/s nueva/s card/s en la Home (La/s última/s creada/s aparecerá/n la/s primera/s en orden de creación).
 
-  --Se guarda la información de la card creada a la base de datos (MongoDB Atlas).
-__________________________________
+  --Se guardará la información de la card creada en la base de datos (MongoDB Atlas).
 
-_______________________________________________________________________
+_____________________________________________________________________________________________________________________________________________________________________________________________________________
 
 *-- ADMINISTRADOR
 
@@ -149,7 +148,7 @@ _______________________________________________________________________
 -El administrador al logarse:
 
 - Accede a un "Panel de administrador" donde:
-  Aparecerá un buscador que al escribir el nombre o título del medio, aparecerá la lista de coincidencias disponibles, y mostrara una lista con:
+  Aparecerá un input buscador que al escribir el nombre o título del medio, aparecerá una lista de coincidencias disponibles, y mostrará por cards:
 
   El nombre del personaje, titulo del medio, fecha en la que se añadió la card y nombre del usuario que la creó (...WORK IN PROGRESS...)
 
@@ -166,11 +165,11 @@ ________________________________________________________________________________
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- SISTEMA DE LIKES --
 
--Cada card en la Home, muestra un contador con el numero total de likes que esa card ha recibido por parte de todos los usuarios registrados de la página y un boton "Me gusta" para votar.
+-Cada card en la Home, muestra un contador con el numero total de likes que esa card ha recibido por parte de todos los usuarios registrados en la página y un boton "Me gusta" para votar.
 
--El botón "Me gusta" solo es funcional al estar registrado y logeado.
+- RECUERDA: El botón "Me gusta" solo es funcional al estar registrado y logeado.
 
--Cada usuario logeado, solo puede votar like una vez por card, al pulsar una segunda vez el boton "Me gusta" sobre la misma card que acaba de votar, eliminará su voto, y se eliminará tambien esa card
+-Cada usuario registrado y logeado, solo puede votar like una vez por card, al pulsar una segunda vez el boton de "Me gusta" sobre la misma card que acaba de votar, eliminará su voto, y se eliminará tambien esa card
   guardada en "Mi perfíl".
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
