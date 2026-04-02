@@ -99,13 +99,14 @@ Tambien se puede probar a registar y usar esas credenciales para acceder.
 -- USUARIO
 
 
-Usuario logeado podrá:
+Usuario registrado y logeado podrá:
 
 -Crear nuevas cards mediante un formulario.
 
 -Dar like a las cards.
 
--Formulario de creación de cards("Crear card", solo funcional al registrarse y logearse).
+-Acceso al formulario de creación de cards ("Crear card", solo funcional al registrarse y logearse).
+
 
 -- Campos del formulario:
 
@@ -113,17 +114,19 @@ Usuario logeado podrá:
 
 -Imagen del personaje (URL)
 
--Tipo de medio
+-Selector del tipo de medio (movie, tv, gaming y book)
 
--Título del medio
+-Título del medio donde aparece el personaje
 
--Frase o cita 
+-Frase o cita famosa del personaje
+
+
 
 Al enviar el formulario:
 
---Se crea una nueva card en la Home(La última creada aparecerá la primera).
+--Se crea una nueva/s card/s en la Home (La/s última/s creada/s aparecerá/n las primeras en orden de creación).
 
---Se añade a la base de datos.
+--Se añade la información a la base de datos.
 
 --El usuario contará con un apartado "Mi pefíl" donde se guardan las cards que el usuario ha dado like
   y las cards que haya creado.
@@ -132,55 +135,48 @@ Al enviar el formulario:
 
 -- ADMINISTRADOR
 
+
+
 Administrador accede mediante credenciales específicas y accede a propiedades exclusivas.
 
-Además de las funciones de usuario, el administrador puede:
+Además de las funciones básicas del usuario, el administrador puede:
 
 Acceder  un "Panel de usuario" donde:
-
-Ver todas las cards existentes y buscar cards por:
+Aparecerá un buscador y una lista de las cards existentes:
 
 -Nombre del personaje
 
 -Título del medio
 
 
---Eliminación y edición de cards
+--Botones de Eliminación y edición de cards.
 
 Cada card mostrará un botón de elimminar y editar  solo visible para el administrador.
 
-Al pulsar eliminar:
+Al pulsar ELIMINAR:
 La card se elimina permanentemente de la página y de la base de datos.
 
-Al pulsar editar, se accede al "Panel administrador" donde:
+Al pulsar EDITAR, se accede al "Panel administrador" donde:
+La aplicación incluirá un input de búsqueda en la Home que permitirá buscar cards por:
 
+--Nombre del personaje--
 
-
-La aplicación incluirá un input de búsqueda en la Home que permitirá encontrar cards por:
-
-Nombre del personaje
-
-Título del medio
-
-Puede devolver múltiples resultados
+--Título del medio--
+  Pudiendo devolver múltiples resultados
 
 Ejemplo:
 
-Un mismo medio puede tener:
+Un mismo medio puede contar con varios personajes o varias citas del mismo personaje
+y el resultado mostrará inmediatamente todas las cards coincidentes.
 
-varios personajes
 
-varias frases
 
-un personaje tener varias citas
-
-Por lo tanto, la búsqueda mostrará inmediatamente todas las cards coincidentes.
 
 -- SISTEMA DE LIKES
 
 Cada card tendrá un botón de:
 
-❤️ Like
+" ❤️ Me gusta "
 Solo funcional al estar registrado y logeado
 
 USABILIDAD:
@@ -195,9 +191,8 @@ La página principal cuenta con una paginación donde se pueden explorar
 las cards con las que cuenta la página en ese momento, las últimas cards creadas
 apareceran las primeras en la home.
 
-Listado basado en el número de likes.
 
-Card destacada
+Card " DESTACADO "
 
 -- La card con más likes aparecerá en un destacado especial en el encabezado de la página:
 
