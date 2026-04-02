@@ -58,7 +58,7 @@ ________________________________________________________________________________
 --------------------- FUNCIONALIDADES --------------------
 
 La aplicación mostrará una colección de cards disponibles en la Home y un destacado en su encabezado que muestra la card más votada, según el número de likes de los usuarios registrados.
-Cuenta también con un input de busqueda para encontrar las cards según el nombre de personaje o título de medio y poder explorar el contenido.
+Cuenta también con un input de busqueda para buscar cards según el nombre de personaje o título de medio donde aparece tal personaje y poder explorar el contenido de la página.
 
 Cada "Card" cuenta con la siguiente información:
 
@@ -74,7 +74,7 @@ Cada "Card" cuenta con la siguiente información:
 
 - Likes totales de la card, recibidos por los usuarios registrados en la página
 
-- Botón "Me gusta" para dar like a la card (funcional solo al estar registrado y logeado)
+- Botón "Me gusta" para dar like a la card (solo será funcional al estar registrado y logeado)
 
 - Un sistema de paginación simple al final de la lista de cards de la Home, para navegar manualmente por el contenido.
 
@@ -98,7 +98,7 @@ Credenciales de prueba: en el navbar, pulsa "LOGIN" e introduce estas credencial
     email: administrador@fanquot.com
     pass: 123456
 
-Tambien se puede probar a registar un nuevo usuario ("REGISTRAR") y usar esas credenciales para acceder al contenido.
+Tambien se puede probar a registar un nuevo usuario (en "REGISTRAR") y usar esas credenciales para acceder al contenido (solo como usuario).
 ___________________________________________________________________________________________________________________________________________________________________
 
 
@@ -135,7 +135,7 @@ _________________________________________
 
 -Al pulsar botón "Crear card" se envia el formulario:
 
-  --Se crea una nueva/s card/s en la Home (La/s última/s creada/s aparecerá/n las primeras en orden de creación).
+  --Se crean una/s nueva/s card/s en la Home (La/s última/s creada/s aparecerá/n la/s primera/s en orden de creación).
 
   --Se guarda la información de la card creada a la base de datos (MongoDB Atlas).
 __________________________________
