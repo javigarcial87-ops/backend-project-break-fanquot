@@ -1,10 +1,10 @@
                                                               FANQUOT
 
-                                        -project-Break-Javier-Garcia-Alvarez- FULLSTACK
+                                        -  Project-Break-Javier-Garcia-Alvarez- FULLSTACK  -
 
 
 
-FanQuot es una Red Social que permite explorar, crear y gestionar "cards" con frases o citas famosas de personajes ficticios(o reales) de distintos tipos de medios como películas, series, libros o videojuegos.
+FanQuot es una Red Social que permite explorar, crear y gestionar "cards" con frases o citas famosas de personajes ficticios (o reales) de distintos tipos de medios como películas, series, libros o videojuegos.
 Los usuarios pueden buscar citas, crear sus propias cards y votar sus favoritas, mientras que el administrador tiene permisos especiales para gestionar el contenido.
 
 
@@ -36,11 +36,12 @@ Render
 
 
 
-El proyecto estará dividido en dos repositorios en GitHub (https://github.com/javigarcial87-ops?tab=repositories):
+El proyecto estará dividido en dos repositorios en GitHub (https://github.com/javigarcial87-ops?tab=repositories)
 
---frontend/   → React + Vite
 
---backend/    → Node.js + Express
+-- FRONTEND/   → React + Vite            https://github.com/javigarcial87-ops/frontend-project-break-fanquot
+
+-- BACKEND/    → Node.js + Express       https://github.com/javigarcial87-ops/backend-project-break-fanquot
 
 
 
@@ -69,20 +70,13 @@ Cada "Card" cuenta con la siguiente información:
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-LINKS del los repositorios en GITHUB
-
-FRONTEND: https://github.com/javigarcial87-ops/frontend-project-break-fanquot
-BACKEND: https://github.com/javigarcial87-ops/backend-project-break-fanquot
-
-
-LINKS de acceso:
+________________________ACCESOS DE PRUEBA_______________________________________________________________________________________________________________________
 
 -- Vercel frontend DEPLOY: 
 https://frontend-project-break-fanquot.vercel.app/
 
 -- Render backend DEPLOY:
 https://backend-project-break-fanquot.onrender.com
-
 
 
 AUTENTIFICACIÓN
@@ -101,8 +95,7 @@ Credenciales de prueba:
     pass: 123456
 
 Tambien se puede probar a registar como nuevo usuario y usar esas credenciales para acceder al contenido.
-
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+___________________________________________________________________________________________________________________________________________________________________
 
 
 
@@ -111,7 +104,8 @@ Tambien se puede probar a registar como nuevo usuario y usar esas credenciales p
 _________________________________________
 
 -- USUARIO --
-  Usuario registrado y logeado podrá:
+
+  -Usuario registrado y logeado podrá:
 
 
 -Dar like a las cards.
@@ -147,9 +141,7 @@ _______________________________________________________________________
 
 *-- ADMINISTRADOR
 
-
-
--Administrador se logea mediante credenciales específicas y accede a propiedades exclusivas.
+-Administrador logeado mediante credenciales específicas, puede acceder a propiedades exclusivas.
 
 -El administrador al logarse:
 
