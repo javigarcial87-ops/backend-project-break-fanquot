@@ -1,6 +1,6 @@
                                                       FANQUOT-project-Break
 
-FanQuot es una Red Social que permite explorar, crear y gestionar frases o citas famosas de personajes ficticios de distintos medios como películas, series, libros o videojuegos, presentadas en formato "card".
+FanQuot es una Red Social que permite explorar, crear y gestionar "cards" con frases o citas famosas de personajes ficticios de distintos medios como películas, series, libros o videojuegos, presentadas en formato "card".
 
 Los usuarios pueden buscar citas, crear sus propias cards y votar sus favoritas, mientras que el administrador tiene permisos especiales para gestionar el contenido.
 
@@ -33,11 +33,9 @@ Render
 
 El proyecto estará dividido en dos repositorios en GitHub (https://github.com/javigarcial87-ops?tab=repositories):
 
-fanquot/
-│
-├── frontend/   → React + Vite
-│
-└── backend/    → Node.js + Express
+--frontend/   → React + Vite
+
+--backend/    → Node.js + Express
 
 
 
@@ -47,19 +45,19 @@ fanquot/
 
 La aplicación mostrará una colección de cards en la Home, cada una con la siguiente información:
 
-Nombre del personaje
+- Nombre del personaje
 
-Imagen del personaje
+- Imagen del personaje
 
-Tipo de medio (película, serie, libro o videojuego)
+- Tipo de medio (película, serie, libro o videojuego)
 
-Título del medio
+- Título del medio donde aparece el personaje
 
-Frase o cita famosa
+- Frase o cita famosa
 
-Likes totales recibidos por los usuarios
+- Likes totales de la card, recibidos por los usuarios registrados en la página
 
-Botón "Me gusta" para dar like a la card (funcional solo al estar registrado y logeado)
+- Botón "Me gusta" para dar like a la card (funcional solo al estar registrado y logeado)
 
 
 LINKS del los repositorios en GITHUB
@@ -101,18 +99,19 @@ Tambien se puede probar a registar y usar esas credenciales para acceder.
 
 Usuario registrado y logeado podrá:
 
--Crear nuevas cards mediante un formulario.
 
 -Dar like a las cards.
-
 -Acceso al formulario de creación de cards ("Crear card", solo funcional al registrarse y logearse).
 
+-Un menú "Mi perfil", donde aparecen guardadas las cards a las que el usuario da "Me gusta" y un registro
+  de las cards que ha creado el usuario.
 
--- Campos del formulario:
+
+-- Campos del formulario de CREACIÓN (donde el usuario podrá escribir mediante inputs...):
 
 -Nombre del personaje
 
--Imagen del personaje (URL)
+-Imagen del personaje (subida mediante URL, subidas en local o cloudinary (...WORK IN PROGRESS...) )
 
 -Selector del tipo de medio (movie, tv, gaming y book)
 
@@ -120,15 +119,16 @@ Usuario registrado y logeado podrá:
 
 -Frase o cita famosa del personaje
 
+-Boton "crear card"
 
 
-Al enviar el formulario:
+Al pulsar botón "Crear card" se envia el formulario:
 
 --Se crea una nueva/s card/s en la Home (La/s última/s creada/s aparecerá/n las primeras en orden de creación).
 
---Se añade la información a la base de datos.
+--Se añade la información de la card a la base de datos(MongoDB Atlas).
 
---El usuario contará con un apartado "Mi pefíl" donde se guardan las cards que el usuario ha dado like
+--El usuario contará con un apartado personal "Mi pefíl" donde se guardan las cards a las que el usuario ha dado like
   y las cards que haya creado.
 
 
@@ -137,38 +137,22 @@ Al enviar el formulario:
 
 
 
-Administrador accede mediante credenciales específicas y accede a propiedades exclusivas.
+Administrador se logea mediante credenciales específicas y accede a propiedades exclusivas.
 
-Además de las funciones básicas del usuario, el administrador puede:
+El administrador al logarse puede:
 
-Acceder  un "Panel de usuario" donde:
-Aparecerá un buscador y una lista de las cards existentes:
-
--Nombre del personaje
-
--Título del medio
+Acceder  un "Panel de administrador" donde:
+Aparecerá un buscador que al escribir el nombre o título del medio, aparecerá la lista de coincidencias
+con la búsqueda junto con nombre de personaje, titulo de medio, fecha en la que se añadió la card y nombre del usuario que la creó (...WORK IN PROGRESS...)
 
 
---Botones de Eliminación y edición de cards.
-
-Cada card mostrará un botón de elimminar y editar  solo visible para el administrador.
+Cada card mostrada, tendrá un botón de ELIMINAR y EDITAR  solo visible para el administrador.
 
 Al pulsar ELIMINAR:
 La card se elimina permanentemente de la página y de la base de datos.
 
-Al pulsar EDITAR, se accede al "Panel administrador" donde:
-La aplicación incluirá un input de búsqueda en la Home que permitirá buscar cards por:
-
---Nombre del personaje--
-
---Título del medio--
-  Pudiendo devolver múltiples resultados
-
-Ejemplo:
-
-Un mismo medio puede contar con varios personajes o varias citas del mismo personaje
-y el resultado mostrará inmediatamente todas las cards coincidentes.
-
+Al pulsar EDITAR: 
+Se accede al "Panel administrador"
 
 
 
@@ -185,16 +169,19 @@ Solo usuarios logueados pueden votar
 
 Cada usuario solo puede votar una vez por card, al pulsar una segunda vez el boton "Me gusta", se eliminará su voto.
 
-Página principal
+HOME
 
 La página principal cuenta con una paginación donde se pueden explorar
 las cards con las que cuenta la página en ese momento, las últimas cards creadas
 apareceran las primeras en la home.
 
 
-Card " DESTACADO "
+DESTACADO
 
--- La card con más likes aparecerá en un destacado especial en el encabezado de la página:
+-- La card con más likes aparecerá en un destacado especial en el encabezado de la página.
+
+
+
 
 Ejemplo de estructura de una card (MongoDB)
 
