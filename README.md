@@ -150,23 +150,22 @@ _______________________________________________________________________
 
 
 
-Administrador se logea mediante credenciales específicas y accede a propiedades exclusivas.
+-Administrador se logea mediante credenciales específicas y accede a propiedades exclusivas.
 
-El administrador al logarse puede:
+-El administrador al logarse puede:
 
-Acceder  un "Panel de administrador" donde:
-Aparecerá un buscador que al escribir el nombre o título del medio, aparecerá la lista de coincidencias
-con la búsqueda junto con nombre de personaje, titulo de medio, fecha en la que se añadió la card y nombre del usuario que la creó (...WORK IN PROGRESS...)
+-Acceder  un "Panel de administrador" donde:
+  Aparecerá un buscador que al escribir el nombre o título del medio, aparecerá la lista de coincidencias
+  con la búsqueda junto con nombre de personaje, titulo de medio, fecha en la que se añadió la card y nombre del usuario que la creó (...WORK IN PROGRESS...)
 
+-Cada card mostrada, tendrá un botón de ELIMINAR y EDITAR  solo visible para el administrador.
 
-Cada card mostrada, tendrá un botón de ELIMINAR y EDITAR  solo visible para el administrador.
+-Al pulsar ELIMINAR:
+  La card se elimina permanentemente de la página y de la base de datos.
 
-Al pulsar ELIMINAR:
-La card se elimina permanentemente de la página y de la base de datos.
-
-Al pulsar EDITAR: 
-Se accede al formulario "Editar Card" donde podemos modificar la card que queramos. Una vez hechos los cambios,
-pulsamos el botón "Guardar cambios" y la card se guardara en la Home, con los cambios que se hayan realizado.
+-Al pulsar EDITAR: 
+  Se accede al formulario "Editar Card" donde podemos modificar la card que queramos. Una vez hechos los cambios,
+  pulsamos el botón "Guardar cambios" y la card se guardara en la Home, con los cambios que se hayan realizado.
 ______________________________________________________________________________________________________________________________________
 
 
