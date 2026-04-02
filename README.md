@@ -124,7 +124,7 @@ Usuario registrado y logeado podrá:
   de las cards que haya creado.
 
 
--- FORMULARIO DE CREACIÓN (donde el usuario podrá escribir mediante inputs...):
+-- FORMULARIO DE CREACIÓN (donde el usuario podrá editar mediante inputs...):
 
 -Nombre del personaje
 
@@ -165,8 +165,8 @@ _______________________________________________________________________
   La card se eliminará permanentemente de la página y de la base de datos.
 
 -Al pulsar EDITAR: 
-  Se accede al formulario "Editar Card"(parecido al formulario de creación, pero con los datos de la card que queramos modificar en los inputs), donde podemos modificar la card que queramos. Una vez hechos los cambios,
-  pulsamos el botón "Guardar cambios" y la card se guardara en la Home, con los cambios que se hayan realizado.
+  Se accede al formulario "Editar Card" (parecido al formulario de creación, pero con los datos de la card que queramos modificar, ya incluidos en los inputs), donde podemos modificar la card que queramos 
+  y luego pulsaremos el botón "Guardar cambios" y la card se guardara en la Home, con los cambios que se hayan realizado.
 ______________________________________________________________________________________________________________________________________
 
 
@@ -175,12 +175,9 @@ ________________________________________________________________________________
 
 -- SISTEMA DE LIKES --
 
-Cada card por defecto, tendrá un botón de:
+-Cada card en la Home, muestra un boton "Me gusta" para votar y un contador con el numero total de likes que esa card ha recibido por parte de todos los usuarios registrados de la página.
 
--" Me gusta "
-  Que suma los likes de todos los usuarios registrados a un contador total en la Home.
-
--Solo funcional al estar registrado y logeado.
+-El botón "Me gusta" solo es funcional al estar registrado y logeado.
 
 -Cada usuario logeado, solo puede votar like una vez por card, al pulsar una segunda vez el boton "Me gusta" sobre la misma card que acaba de votar, eliminará su voto.
 
