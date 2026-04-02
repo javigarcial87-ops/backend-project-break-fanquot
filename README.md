@@ -4,7 +4,7 @@
 
 
 
-FanQuot es una Red Social que permite explorar, crear y gestionar "cards" con frases o citas famosas de personajes ficticios(o reales) de distintos medios como películas, series, libros o videojuegos.
+FanQuot es una Red Social que permite explorar, crear y gestionar "cards" con frases o citas famosas de personajes ficticios(o reales) de distintos tipos de medios como películas, series, libros o videojuegos.
 Los usuarios pueden buscar citas, crear sus propias cards y votar sus favoritas, mientras que el administrador tiene permisos especiales para gestionar el contenido.
 
 
@@ -111,9 +111,7 @@ Tambien se puede probar a registar como nuevo usuario y usar esas credenciales p
 _________________________________________
 
 -- USUARIO --
-
-
-Usuario registrado y logeado podrá:
+  Usuario registrado y logeado podrá:
 
 
 -Dar like a las cards.
@@ -124,11 +122,11 @@ Usuario registrado y logeado podrá:
   de las cards que haya creado.
 
 
--- FORMULARIO DE CREACIÓN (donde el usuario podrá editar mediante inputs...):
+-- EL FORMULARIO DE CREACIÓN (donde el usuario podrá crear mediante inputs...) --
 
 -Nombre del personaje
 
--Imagen del personaje (subida provisional mediante URL, subidas en local o cloudinary (...WORK IN PROGRESS...) )
+-Imagen del personaje (subida provisional mediante URL, subidas de archivos de imágen en local o cloudinary (...WORK IN PROGRESS...) )
 
 -Selector del tipo de medio (movie, tv, gaming y book)
 
@@ -157,22 +155,19 @@ _______________________________________________________________________
 
 - Accede a un "Panel de administrador" donde:
   Aparecerá un buscador que al escribir el nombre o título del medio, aparecerá la lista de coincidencias disponibles
-  junto con el nombre del personaje, titulo de medio, fecha en la que se añadió la card y nombre del usuario que la creó (...WORK IN PROGRESS...)
+  junto con el nombre del personaje, titulo del medio, fecha en la que se añadió la card y nombre del usuario que la creó (...WORK IN PROGRESS...)
 
--Cada card mostrada con estas credenciales, tendrá un botón de ELIMINAR y EDITAR  solo visible para el administrador.
+-Cada card mostrada con estas credenciales, tendrá un botón de ELIMINAR y EDITAR (funciones de "Mi perfil" o votar "Me gusta", se mantienen)  solo visible para el administrador.
 
 -Al pulsar ELIMINAR:
   La card se eliminará permanentemente de la página y de la base de datos.
 
 -Al pulsar EDITAR: 
-  Se accede al formulario "Editar Card" (parecido al formulario de creación, pero con los datos de la card que queramos modificar, ya incluidos en los inputs), donde podemos modificar la card que queramos 
-  y luego pulsaremos el botón "Guardar cambios" y la card se guardara en la Home, con los cambios que se hayan realizado.
+  Se accede al formulario "Editar Card" (parecido al formulario de creación, pero con los datos de la card que queramos modificar ya incluidos en los inputs), donde podemos modificar la card que queramos 
+  y luego pulsando el botón "Guardar cambios", guardaremos la card en la Home, con los cambios que se hayan realizado.
 ______________________________________________________________________________________________________________________________________
 
-
-
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 -- SISTEMA DE LIKES --
 
 -Cada card en la Home, muestra un boton "Me gusta" para votar y un contador con el numero total de likes que esa card ha recibido por parte de todos los usuarios registrados de la página.
