@@ -1,28 +1,28 @@
                                                       FANQUOT-project-Break
 
-FanQuot es una aplicación web que permite explorar, crear y gestionar frases o citas famosas de personajes ficticios de distintos medios como películas, series, libros o videojuegos, presentadas en formato "card".
+FanQuot es una Red Social que permite explorar, crear y gestionar frases o citas famosas de personajes ficticios de distintos medios como películas, series, libros o videojuegos, presentadas en formato "card".
 
 Los usuarios pueden buscar citas, crear sus propias cards y votar sus favoritas, mientras que el administrador tiene permisos especiales para gestionar el contenido.
 
 Tecnologías utilizadas:
 
+
 -- FRONTEND
 
-React
+React (Javascript)
 
 Vite
 
 CSS
 
-Netifly
+Vercel
+
 
 -- BACKEND
 
 Node.js
 
 Express
-
-Base de datos
 
 MongoDB Atlas
 
@@ -31,7 +31,7 @@ Render
 
 
 
-El proyecto estará dividido en dos repositorios:
+El proyecto estará dividido en dos repositorios en GitHub (https://github.com/javigarcial87-ops?tab=repositories):
 
 fanquot/
 │
@@ -39,14 +39,13 @@ fanquot/
 │
 └── backend/    → Node.js + Express
 
-Ambos proyectos se conectarán a la base de datos en MongoDBAtlas.
 
 
 ---------------------FUNCIONALIDADES PRINCIPALES--------------------
 
 -- Visualización de cards
 
-La aplicación mostrará una colección de cards, cada una con la siguiente información:
+La aplicación mostrará una colección de cards en la Home, cada una con la siguiente información:
 
 Nombre del personaje
 
@@ -58,7 +57,10 @@ Título del medio
 
 Frase o cita famosa
 
-Las cards se mostrarán inicialmente a partir de un array de objetos predefinido.
+Likes totales recibidos por los usuarios
+
+Botón "Me gusta" para dar like a la card (funcional solo al estar registrado y logeado)
+
 
 LINKS del los repositorios en GITHUB
 
@@ -68,8 +70,8 @@ BACKEND: https://github.com/javigarcial87-ops/backend-project-break-fanquot
 
 LINKS de acceso:
 
---Netlify frontend deploy: 
-https://frontend-project-break-fanquot.netlify.app/
+--Vercel frontend deploy: 
+https://frontend-project-break-fanquot.vercel.app/
 
 --Render backend deploy:
 https://backend-project-break-fanquot.onrender.com
@@ -83,40 +85,39 @@ AUTENTIFICACIÓN
 
 Credenciales de prueba:
 
---user(ya registrado)
-email: yo@.es
-pass: 1234
+--USUARIO (de prueba, ya registrado)
+    email: yo@.es
+    pass: 1234
 
---admn
-email: administrador@fanquot.com
-pass: 123456
+--ADMIN (logeado con estas credenciales)
+    email: administrador@fanquot.com
+    pass: 123456
 
-tambien se puede registar y usar esas credenciales para acceder.
+Tambien se puede probar a registar y usar esas credenciales para acceder.
 
 
 -- USUARIO
 
+
 Usuario logeado podrá:
 
-Crear nuevas cards mediante un formulario.
+-Crear nuevas cards mediante un formulario.
 
-Dar like a las cards.
+-Dar like a las cards.
 
-Buscar frases por personaje o título del medio en el que aparecen.
+-Formulario de creación de cards("Crear card", solo funcional al registrarse y logearse).
 
-Formulario de creación de cards
+-- Campos del formulario:
 
-Campos del formulario:
+-Nombre del personaje
 
-Nombre del personaje
+-Imagen del personaje (URL)
 
-Imagen del personaje (URL)
+-Tipo de medio
 
-Tipo de medio
+-Título del medio
 
-Título del medio
-
-Frase o cita (máximo ~600 caracteres)
+-Frase o cita 
 
 Al enviar el formulario:
 
@@ -124,35 +125,36 @@ Al enviar el formulario:
 
 --Se añade a la base de datos.
 
---El usuario contará con un apartado "Mi pefíl" donde se guardan las cards que el usuario habra dado like.
+--El usuario contará con un apartado "Mi pefíl" donde se guardan las cards que el usuario ha dado like
+  y las cards que haya creado.
 
 
-ADMINISTRADOR
 
-Administrador accede mediante credenciales específicas.
+-- ADMINISTRADOR
+
+Administrador accede mediante credenciales específicas y accede a propiedades exclusivas.
 
 Además de las funciones de usuario, el administrador puede:
 
-Panel de administrador
+Acceder  un "Panel de usuario" donde:
 
-Ver todas las cards existentes
-
--- Buscar cards por:
+Ver todas las cards existentes y buscar cards por:
 
 -Nombre del personaje
 
--Nombre del medio
+-Título del medio
 
 
 --Eliminación y edición de cards
 
 Cada card mostrará un botón de elimminar y editar  solo visible para el administrador.
 
-Al pulsarlo:
+Al pulsar eliminar:
+La card se elimina permanentemente de la página y de la base de datos.
 
-La card se elimina permanentemente de la base de datos.
+Al pulsar editar, se accede al "Panel administrador" donde:
 
-Sistema de búsqueda
+
 
 La aplicación incluirá un input de búsqueda en la Home que permitirá encontrar cards por:
 
@@ -170,32 +172,34 @@ varios personajes
 
 varias frases
 
-un personaje con varias citas
+un personaje tener varias citas
 
-Por lo tanto, la búsqueda mostrará todas las cards coincidentes.
+Por lo tanto, la búsqueda mostrará inmediatamente todas las cards coincidentes.
 
 -- SISTEMA DE LIKES
 
 Cada card tendrá un botón de:
 
 ❤️ Like
+Solo funcional al estar registrado y logeado
 
 USABILIDAD:
 
 Solo usuarios logueados pueden votar
 
-Cada usuario solo puede votar una vez por card
+Cada usuario solo puede votar una vez por card, al pulsar una segunda vez el boton "Me gusta", se eliminará su voto.
 
 Página principal
 
-La página principal cuenta con una paginación donde se pueden revisar
-las cards con las que cuenta la página en ese momento
+La página principal cuenta con una paginación donde se pueden explorar
+las cards con las que cuenta la página en ese momento, las últimas cards creadas
+apareceran las primeras en la home.
 
 Listado basado en el número de likes.
 
 Card destacada
 
---La card con más likes aparecerá en un destacado especial:
+-- La card con más likes aparecerá en un destacado especial en el encabezado de la página:
 
 Ejemplo de estructura de una card (MongoDB)
 
