@@ -33,7 +33,7 @@ MongoDB Atlas
 
 Render
 
-
+____________________________________________________________________________________________________________________________________
 
 
 El proyecto estará dividido en dos repositorios en GitHub (https://github.com/javigarcial87-ops?tab=repositories)
@@ -43,12 +43,22 @@ El proyecto estará dividido en dos repositorios en GitHub (https://github.com/j
 
 -- BACKEND/    → Node.js + Express       https://github.com/javigarcial87-ops/backend-project-break-fanquot
 
+Y dos links DEPLOY
 
+
+-- Vercel frontend DEPLOY: 
+https://frontend-project-break-fanquot.vercel.app/
+
+-- Render backend DEPLOY:
+https://backend-project-break-fanquot.onrender.com
+
+
+______________________________________________________________________________________________________________________________________
 
 --------------------- FUNCIONALIDADES --------------------
 
 La aplicación mostrará una colección de cards disponibles en la Home y un destacado en su encabezado que muestra la card más votada, según el número de likes de los usuarios registrados.
-Cuenta también con un input de busqueda para encontrar las cards según el nombre de personaje o título de medio y explorar el contenido.
+Cuenta también con un input de busqueda para encontrar las cards según el nombre de personaje o título de medio y poder explorar el contenido.
 
 Cada "Card" cuenta con la siguiente información:
 
@@ -66,17 +76,11 @@ Cada "Card" cuenta con la siguiente información:
 
 - Botón "Me gusta" para dar like a la card (funcional solo al estar registrado y logeado)
 
-- Un sistema de paginación simple al final de la lista de cards en la Home, para navegar manualmente entre las cards disponibles.
+- Un sistema de paginación simple al final de la lista de cards de la Home, para navegar manualmente por el contenido.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ________________________ACCESOS DE PRUEBA_______________________________________________________________________________________________________________________
-
--- Vercel frontend DEPLOY: 
-https://frontend-project-break-fanquot.vercel.app/
-
--- Render backend DEPLOY:
-https://backend-project-break-fanquot.onrender.com
 
 
 AUTENTIFICACIÓN
@@ -84,7 +88,7 @@ AUTENTIFICACIÓN
 * Administrador
 * Usuario
 
-Credenciales de prueba:
+Credenciales de prueba: en el navbar, pulsa "LOGIN" e introduce estas credenciales de prueba.
 
 --USUARIO (de prueba, ya registrado)
     email: yo@.es
@@ -94,7 +98,7 @@ Credenciales de prueba:
     email: administrador@fanquot.com
     pass: 123456
 
-Tambien se puede probar a registar como nuevo usuario y usar esas credenciales para acceder al contenido.
+Tambien se puede probar a registar un nuevo usuario ("REGISTRAR") y usar esas credenciales para acceder al contenido.
 ___________________________________________________________________________________________________________________________________________________________________
 
 
@@ -114,7 +118,6 @@ _________________________________________
 
 -Un menú "Mi perfil" en el navbar, donde aparecen guardadas las cards a las que el usuario haya dado "Me gusta" y un registro
   de las cards que haya creado.
-
 
 -- EL FORMULARIO DE CREACIÓN (donde el usuario podrá crear mediante inputs...) --
 
@@ -146,10 +149,11 @@ _______________________________________________________________________
 -El administrador al logarse:
 
 - Accede a un "Panel de administrador" donde:
-  Aparecerá un buscador que al escribir el nombre o título del medio, aparecerá la lista de coincidencias disponibles
-  junto con el nombre del personaje, titulo del medio, fecha en la que se añadió la card y nombre del usuario que la creó (...WORK IN PROGRESS...)
+  Aparecerá un buscador que al escribir el nombre o título del medio, aparecerá la lista de coincidencias disponibles, y mostrara una lista con:
 
--Cada card mostrada con estas credenciales, tendrá un botón de ELIMINAR y EDITAR (funciones de "Mi perfil" o votar "Me gusta", se mantienen)  solo visible para el administrador.
+  El nombre del personaje, titulo del medio, fecha en la que se añadió la card y nombre del usuario que la creó (...WORK IN PROGRESS...)
+
+-Cada elemento mostrado con estas credenciales, tendrá un botón de ELIMINAR y EDITAR (funciones de "Mi perfil" o votar "Me gusta", se mantienen)  solo visible para el administrador.
 
 -Al pulsar ELIMINAR:
   La card se eliminará permanentemente de la página y de la base de datos.
@@ -162,11 +166,12 @@ ________________________________________________________________________________
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- SISTEMA DE LIKES --
 
--Cada card en la Home, muestra un boton "Me gusta" para votar y un contador con el numero total de likes que esa card ha recibido por parte de todos los usuarios registrados de la página.
+-Cada card en la Home, muestra un contador con el numero total de likes que esa card ha recibido por parte de todos los usuarios registrados de la página y un boton "Me gusta" para votar.
 
 -El botón "Me gusta" solo es funcional al estar registrado y logeado.
 
--Cada usuario logeado, solo puede votar like una vez por card, al pulsar una segunda vez el boton "Me gusta" sobre la misma card que acaba de votar, eliminará su voto.
+-Cada usuario logeado, solo puede votar like una vez por card, al pulsar una segunda vez el boton "Me gusta" sobre la misma card que acaba de votar, eliminará su voto, y se eliminará tambien esa card
+  guardada en "Mi perfíl".
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
