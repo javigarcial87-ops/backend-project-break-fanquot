@@ -7,7 +7,8 @@ const cardSchema = new mongoose.Schema({
   mediaTitle: String,
   quote: String,
   likes: Number,
-  likedBy: [String]
+  likedBy: [String],
+  createdBy: String
  
 }, {timestamps:true})
 
