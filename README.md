@@ -44,7 +44,7 @@ El proyecto estará dividido en dos repositorios en GitHub (https://github.com/j
 
 
 
----------------------FUNCIONALIDADES PRINCIPALES--------------------
+--------------------- FUNCIONALIDADES --------------------
 
 La aplicación mostrará una colección de cards disponibles en la Home y un destacado en su encabezado que muestra la card más votada, según el número de likes de los usuarios registrados.
 Cuenta también con un input de busqueda para encontrar las cards según el nombre de personaje o título de medio y explorar el contenido.
@@ -65,7 +65,7 @@ Cada "Card" cuenta con la siguiente información:
 
 - Botón "Me gusta" para dar like a la card (funcional solo al estar registrado y logeado)
 
-- Un sistema de paginación simple al final de la lista, para navegar manualmente entre las cards disponibles.
+- Un sistema de paginación simple al final de la lista de cards en la Home, para navegar manualmente entre las cards disponibles.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -124,7 +124,7 @@ Usuario registrado y logeado podrá:
   de las cards que haya creado.
 
 
--- Los campos del formulario de CREACIÓN (donde el usuario podrá escribir mediante inputs...):
+-- FORMULARIO DE CREACIÓN (donde el usuario podrá escribir mediante inputs...):
 
 -Nombre del personaje
 
