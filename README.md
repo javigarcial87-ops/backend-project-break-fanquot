@@ -70,10 +70,10 @@ BACKEND: https://github.com/javigarcial87-ops/backend-project-break-fanquot
 
 LINKS de acceso:
 
---Vercel frontend deploy: 
+-- Vercel frontend DEPLOY: 
 https://frontend-project-break-fanquot.vercel.app/
 
---Render backend deploy:
+-- Render backend DEPLOY:
 https://backend-project-break-fanquot.onrender.com
 
 
