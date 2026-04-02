@@ -158,7 +158,7 @@ _______________________________________________________________________
   Aparecerá un buscador que al escribir el nombre o título del medio, aparecerá la lista de coincidencias
   con la búsqueda junto con nombre de personaje, titulo de medio, fecha en la que se añadió la card y nombre del usuario que la creó (...WORK IN PROGRESS...)
 
--Cada card mostrada, tendrá un botón de ELIMINAR y EDITAR  solo visible para el administrador.
+-Cada card mostrada en "Home", tendrá un botón de ELIMINAR y EDITAR  solo visible para el administrador.
 
 -Al pulsar ELIMINAR:
   La card se elimina permanentemente de la página y de la base de datos.
@@ -174,16 +174,12 @@ ________________________________________________________________________________
 
 -- SISTEMA DE LIKES
 
-Cada card tendrá un botón de:
+Cada card por defecto en Home, tendrá un botón de:
 
 " Me gusta "
-Solo funcional al estar registrado y logeado.
 
-USABILIDAD:
-
-Solo usuarios logueados pueden votar
-
-Cada usuario solo puede votar una vez por card, al pulsar una segunda vez el boton "Me gusta" sobre la misma card que acaba de votar, se eliminará su voto.
+-Solo funcional al estar registrado y logeado.
+-Cada usuario solo puede votar una vez por card, al pulsar una segunda vez el boton "Me gusta" sobre la misma card que acaba de votar, se eliminará su voto.
 
 
 
