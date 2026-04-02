@@ -4,7 +4,7 @@
 
 
 
-FanQuot es una Red Social que permite explorar, crear y gestionar "cards" con frases o citas famosas de personajes ficticios de distintos medios como películas, series, libros o videojuegos, presentadas en formato "card".
+FanQuot es una Red Social que permite explorar, crear y gestionar "cards" con frases o citas famosas de personajes ficticios(o reales) de distintos medios como películas, series, libros o videojuegos, presentadas en formato "card".
 
 Los usuarios pueden buscar citas, crear sus propias cards y votar sus favoritas, mientras que el administrador tiene permisos especiales para gestionar el contenido.
 
@@ -69,6 +69,7 @@ Cada "Card" cuenta con la siguiente información:
 - Un sistema de paginación simple para navegar entre las cards disponibles.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 LINKS del los repositorios en GITHUB
 
 FRONTEND: https://github.com/javigarcial87-ops/frontend-project-break-fanquot
@@ -101,12 +102,15 @@ Credenciales de prueba:
     pass: 123456
 
 Tambien se puede probar a registar como nuevo usuario y usar esas credenciales para acceder al contenido.
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 
 --------------------------------------   ROLES   ---------------------------------------------------------------------------------------------------------------------------------------------------
 
-
--- USUARIO
+_________________________________________
+*-- USUARIO
 
 
 Usuario registrado y logeado podrá:
@@ -114,9 +118,9 @@ Usuario registrado y logeado podrá:
 
 -Dar like a las cards.
 
--Acceso al formulario de creación de cards ("Crear card", solo funcional al registrarse y logearse).
+-Acceso al formulario de creación de cards.
 
--Un menú "Mi perfil", donde aparecen guardadas las cards a las que el usuario da "Me gusta" y un registro
+-Un menú "Mi perfil" en el navbar, donde aparecen guardadas las cards a las que el usuario haya dado "Me gusta" y un registro
   de las cards que haya creado el usuario.
 
 
@@ -124,7 +128,7 @@ Usuario registrado y logeado podrá:
 
 -Nombre del personaje
 
--Imagen del personaje (subida mediante URL, subidas en local o cloudinary (...WORK IN PROGRESS...) )
+-Imagen del personaje (subida provisional mediante URL, subidas en local o cloudinary (...WORK IN PROGRESS...) )
 
 -Selector del tipo de medio (movie, tv, gaming y book)
 
@@ -134,19 +138,15 @@ Usuario registrado y logeado podrá:
 
 -Boton "crear card"
 
+-Al pulsar botón "Crear card" se envia el formulario:
 
-Al pulsar botón "Crear card" se envia el formulario:
+  --Se crea una nueva/s card/s en la Home (La/s última/s creada/s aparecerá/n las primeras en orden de creación).
 
---Se crea una nueva/s card/s en la Home (La/s última/s creada/s aparecerá/n las primeras en orden de creación).
+  --Se añade la información de la card a la base de datos (MongoDB Atlas).
+__________________________________
 
---Se añade la información de la card a la base de datos (MongoDB Atlas).
-
---El usuario contará con un apartado personal "Mi pefíl" donde se guardan las cards a las que el usuario ha dado like
-  y las cards que haya creado.
-
-
-
--- ADMINISTRADOR
+_______________________________________________________________________
+*-- ADMINISTRADOR
 
 
 
@@ -167,6 +167,9 @@ La card se elimina permanentemente de la página y de la base de datos.
 Al pulsar EDITAR: 
 Se accede al formulario "Editar Card" donde podemos modificar la card que queramos. Una vez hechos los cambios,
 pulsamos el botón "Guardar cambios" y la card se guardara en la Home, con los cambios que se hayan realizado.
+______________________________________________________________________________________________________________________________________
+
+
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -174,7 +177,7 @@ pulsamos el botón "Guardar cambios" y la card se guardara en la Home, con los c
 
 Cada card tendrá un botón de:
 
-" ❤️ Me gusta "
+" Me gusta "
 Solo funcional al estar registrado y logeado.
 
 USABILIDAD:
@@ -182,18 +185,6 @@ USABILIDAD:
 Solo usuarios logueados pueden votar
 
 Cada usuario solo puede votar una vez por card, al pulsar una segunda vez el boton "Me gusta" sobre la misma card que acaba de votar, se eliminará su voto.
-
-HOME
-
-La página principal cuenta con una paginación donde se pueden explorar
-las cards con las que cuenta la página en ese momento, las últimas cards creadas
-apareceran las primeras en la home.
-
-
-DESTACADO
-
--- La card con más likes aparecerá en un destacado especial en el encabezado de la página.
-
 
 
 
