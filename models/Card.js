@@ -8,7 +8,8 @@ const cardSchema = new mongoose.Schema({
   quote: String,
   likes: Number,
   likedBy: [String],
-  createdBy: String
+  createdBy: String,
+  createdByName: String
  
 }, {timestamps:true})
 
