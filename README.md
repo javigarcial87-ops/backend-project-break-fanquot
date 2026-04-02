@@ -4,8 +4,7 @@
 
 
 
-FanQuot es una Red Social que permite explorar, crear y gestionar "cards" con frases o citas famosas de personajes ficticios(o reales) de distintos medios como películas, series, libros o videojuegos, presentadas en formato "card".
-
+FanQuot es una Red Social que permite explorar, crear y gestionar "cards" con frases o citas famosas de personajes ficticios(o reales) de distintos medios como películas, series, libros o videojuegos.
 Los usuarios pueden buscar citas, crear sus propias cards y votar sus favoritas, mientras que el administrador tiene permisos especiales para gestionar el contenido.
 
 
@@ -47,9 +46,9 @@ El proyecto estará dividido en dos repositorios en GitHub (https://github.com/j
 
 ---------------------FUNCIONALIDADES PRINCIPALES--------------------
 
--- Visualización de cards
+La aplicación mostrará una colección de cards disponibles en la Home y un destacado en su encabezado que muestra la card más votada, según el número de likes de los usuarios registrados.
+Cuenta también con un input de busqueda para encontrar las cards según el nombre de personaje o título de medio y explorar el contenido.
 
-La aplicación mostrará una colección de cards en la Home y un destacado en su encabezado que muestra la card más votada según el número de likes de los usuarios registrados.
 Cada "Card" cuenta con la siguiente información:
 
 - Nombre del personaje
@@ -60,13 +59,13 @@ Cada "Card" cuenta con la siguiente información:
 
 - Título del medio donde aparece el personaje
 
-- Frase o cita famosa
+- Frase o cita famosa del personaje
 
 - Likes totales de la card, recibidos por los usuarios registrados en la página
 
 - Botón "Me gusta" para dar like a la card (funcional solo al estar registrado y logeado)
 
-- Un sistema de paginación simple para navegar entre las cards disponibles.
+- Un sistema de paginación simple al final de la lista, para navegar manualmente entre las cards disponibles.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -110,7 +109,8 @@ Tambien se puede probar a registar como nuevo usuario y usar esas credenciales p
 --------------------------------------   ROLES   ---------------------------------------------------------------------------------------------------------------------------------------------------
 
 _________________________________________
-*-- USUARIO
+
+-- USUARIO --
 
 
 Usuario registrado y logeado podrá:
@@ -121,7 +121,7 @@ Usuario registrado y logeado podrá:
 -Acceso al formulario de creación de cards.
 
 -Un menú "Mi perfil" en el navbar, donde aparecen guardadas las cards a las que el usuario haya dado "Me gusta" y un registro
-  de las cards que haya creado el usuario.
+  de las cards que haya creado.
 
 
 -- Los campos del formulario de CREACIÓN (donde el usuario podrá escribir mediante inputs...):
@@ -142,29 +142,30 @@ Usuario registrado y logeado podrá:
 
   --Se crea una nueva/s card/s en la Home (La/s última/s creada/s aparecerá/n las primeras en orden de creación).
 
-  --Se añade la información de la card a la base de datos (MongoDB Atlas).
+  --Se guarda la información de la card creada a la base de datos (MongoDB Atlas).
 __________________________________
 
 _______________________________________________________________________
+
 *-- ADMINISTRADOR
 
 
 
 -Administrador se logea mediante credenciales específicas y accede a propiedades exclusivas.
 
--El administrador al logarse puede:
+-El administrador al logarse:
 
--Acceder  un "Panel de administrador" donde:
-  Aparecerá un buscador que al escribir el nombre o título del medio, aparecerá la lista de coincidencias
-  con la búsqueda junto con nombre de personaje, titulo de medio, fecha en la que se añadió la card y nombre del usuario que la creó (...WORK IN PROGRESS...)
+- Accede a un "Panel de administrador" donde:
+  Aparecerá un buscador que al escribir el nombre o título del medio, aparecerá la lista de coincidencias disponibles
+  junto con el nombre del personaje, titulo de medio, fecha en la que se añadió la card y nombre del usuario que la creó (...WORK IN PROGRESS...)
 
--Cada card mostrada en "Home", tendrá un botón de ELIMINAR y EDITAR  solo visible para el administrador.
+-Cada card mostrada con estas credenciales, tendrá un botón de ELIMINAR y EDITAR  solo visible para el administrador.
 
 -Al pulsar ELIMINAR:
-  La card se elimina permanentemente de la página y de la base de datos.
+  La card se eliminará permanentemente de la página y de la base de datos.
 
 -Al pulsar EDITAR: 
-  Se accede al formulario "Editar Card" donde podemos modificar la card que queramos. Una vez hechos los cambios,
+  Se accede al formulario "Editar Card"(parecido al formulario de creación, pero con los datos de la card que queramos modificar en los inputs), donde podemos modificar la card que queramos. Una vez hechos los cambios,
   pulsamos el botón "Guardar cambios" y la card se guardara en la Home, con los cambios que se hayan realizado.
 ______________________________________________________________________________________________________________________________________
 
@@ -172,16 +173,18 @@ ________________________________________________________________________________
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
--- SISTEMA DE LIKES
+-- SISTEMA DE LIKES --
 
-Cada card por defecto en Home, tendrá un botón de:
+Cada card por defecto, tendrá un botón de:
 
-" Me gusta "
+-" Me gusta "
+  Que suma los likes de todos los usuarios registrados a un contador total en la Home.
 
 -Solo funcional al estar registrado y logeado.
--Cada usuario solo puede votar una vez por card, al pulsar una segunda vez el boton "Me gusta" sobre la misma card que acaba de votar, se eliminará su voto.
 
+-Cada usuario logeado, solo puede votar like una vez por card, al pulsar una segunda vez el boton "Me gusta" sobre la misma card que acaba de votar, eliminará su voto.
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Ejemplo de estructura de una card (MongoDB)
 
