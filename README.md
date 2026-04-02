@@ -49,7 +49,7 @@ El proyecto estará dividido en dos repositorios en GitHub (https://github.com/j
 
 -- Visualización de cards
 
-La aplicación mostrará una colección de cards en la Home y un destacado en su encabezado que muestra la card más votada según el número de likes de los usuarios.
+La aplicación mostrará una colección de cards en la Home y un destacado en su encabezado que muestra la card más votada según el número de likes de los usuarios registrados.
 Cada "Card" cuenta con la siguiente información:
 
 - Nombre del personaje
@@ -67,6 +67,7 @@ Cada "Card" cuenta con la siguiente información:
 - Botón "Me gusta" para dar like a la card (funcional solo al estar registrado y logeado)
 
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 LINKS del los repositorios en GITHUB
 
 FRONTEND: https://github.com/javigarcial87-ops/frontend-project-break-fanquot
@@ -98,7 +99,10 @@ Credenciales de prueba:
     email: administrador@fanquot.com
     pass: 123456
 
-Tambien se puede probar a registar como nuevo usuario y usar esas credenciales para acceder.
+Tambien se puede probar a registar como nuevo usuario y usar esas credenciales para acceder al contenido.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+------------------------    ROLES   ---------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 -- USUARIO
@@ -134,7 +138,7 @@ Al pulsar botón "Crear card" se envia el formulario:
 
 --Se crea una nueva/s card/s en la Home (La/s última/s creada/s aparecerá/n las primeras en orden de creación).
 
---Se añade la información de la card a la base de datos(MongoDB Atlas).
+--Se añade la información de la card a la base de datos (MongoDB Atlas).
 
 --El usuario contará con un apartado personal "Mi pefíl" donde se guardan las cards a las que el usuario ha dado like
   y las cards que haya creado.
@@ -176,7 +180,7 @@ USABILIDAD:
 
 Solo usuarios logueados pueden votar
 
-Cada usuario solo puede votar una vez por card, al pulsar una segunda vez el boton "Me gusta", se eliminará su voto.
+Cada usuario solo puede votar una vez por card, al pulsar una segunda vez el boton "Me gusta" sobre la misma card que acaba de votar, se eliminará su voto.
 
 HOME
 
