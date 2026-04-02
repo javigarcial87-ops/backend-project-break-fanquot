@@ -1,8 +1,14 @@
-                                                      FANQUOT-project-Break
+                                                      FANQUOT
+
+                                        -project-Break-Javier-Garcia-Alvarez- FULLSTACK
+
+
 
 FanQuot es una Red Social que permite explorar, crear y gestionar "cards" con frases o citas famosas de personajes ficticios de distintos medios como películas, series, libros o videojuegos, presentadas en formato "card".
 
 Los usuarios pueden buscar citas, crear sus propias cards y votar sus favoritas, mientras que el administrador tiene permisos especiales para gestionar el contenido.
+
+
 
 Tecnologías utilizadas:
 
@@ -43,13 +49,14 @@ El proyecto estará dividido en dos repositorios en GitHub (https://github.com/j
 
 -- Visualización de cards
 
-La aplicación mostrará una colección de cards en la Home, cada una con la siguiente información:
+La aplicación mostrará una colección de cards en la Home y un destacado en su encabezado que muestra la card más votada según el número de likes de los usuarios.
+Cada "Card" cuenta con la siguiente información:
 
 - Nombre del personaje
 
 - Imagen del personaje
 
-- Tipo de medio (película, serie, libro o videojuego)
+- Tipo de medio (película (MOVIE), serie (TV), libro (BOOK) o videojuego (GAMING))
 
 - Título del medio donde aparece el personaje
 
@@ -91,7 +98,7 @@ Credenciales de prueba:
     email: administrador@fanquot.com
     pass: 123456
 
-Tambien se puede probar a registar y usar esas credenciales para acceder.
+Tambien se puede probar a registar como nuevo usuario y usar esas credenciales para acceder.
 
 
 -- USUARIO
@@ -101,10 +108,11 @@ Usuario registrado y logeado podrá:
 
 
 -Dar like a las cards.
+
 -Acceso al formulario de creación de cards ("Crear card", solo funcional al registrarse y logearse).
 
 -Un menú "Mi perfil", donde aparecen guardadas las cards a las que el usuario da "Me gusta" y un registro
-  de las cards que ha creado el usuario.
+  de las cards que haya creado el usuario.
 
 
 -- Campos del formulario de CREACIÓN (donde el usuario podrá escribir mediante inputs...):
@@ -152,7 +160,8 @@ Al pulsar ELIMINAR:
 La card se elimina permanentemente de la página y de la base de datos.
 
 Al pulsar EDITAR: 
-Se accede al "Panel administrador"
+Se accede al formulario "Editar Card" donde podemos modificar la card que queramos. Una vez hechos los cambios,
+pulsamos el botón "Guardar cambios" y la card se guardara en la Home, con los cambios que se hayan realizado.
 
 
 
@@ -161,7 +170,7 @@ Se accede al "Panel administrador"
 Cada card tendrá un botón de:
 
 " ❤️ Me gusta "
-Solo funcional al estar registrado y logeado
+Solo funcional al estar registrado y logeado.
 
 USABILIDAD:
 
