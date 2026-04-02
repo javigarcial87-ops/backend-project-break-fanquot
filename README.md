@@ -66,6 +66,7 @@ Cada "Card" cuenta con la siguiente información:
 
 - Botón "Me gusta" para dar like a la card (funcional solo al estar registrado y logeado)
 
+- Un sistema de paginación simple para navegar entre las cards disponibles.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 LINKS del los repositorios en GITHUB
@@ -102,7 +103,7 @@ Credenciales de prueba:
 Tambien se puede probar a registar como nuevo usuario y usar esas credenciales para acceder al contenido.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-------------------------    ROLES   ---------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------   ROLES   ---------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 -- USUARIO
@@ -119,7 +120,7 @@ Usuario registrado y logeado podrá:
   de las cards que haya creado el usuario.
 
 
--- Campos del formulario de CREACIÓN (donde el usuario podrá escribir mediante inputs...):
+-- Los campos del formulario de CREACIÓN (donde el usuario podrá escribir mediante inputs...):
 
 -Nombre del personaje
 
@@ -167,7 +168,7 @@ Al pulsar EDITAR:
 Se accede al formulario "Editar Card" donde podemos modificar la card que queramos. Una vez hechos los cambios,
 pulsamos el botón "Guardar cambios" y la card se guardara en la Home, con los cambios que se hayan realizado.
 
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- SISTEMA DE LIKES
 
