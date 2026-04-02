@@ -119,13 +119,13 @@ _________________________________________
 -Un menú "Mi perfil" en el navbar, donde aparecen guardadas las cards a las que el usuario haya dado "Me gusta" y un registro
   de las cards que haya creado.
 
--- EL FORMULARIO DE CREACIÓN (donde el usuario podrá crear mediante inputs...) --
+-- EL FORMULARIO DE CREACIÓN (donde el usuario podrá crear mediante inputs...)(limitación de creación de número de cards por usuario (...WORK IN PROGRESS...)) --
 
 -Nombre del personaje
 
 -Imagen del personaje (subida provisional mediante URL, subidas de archivos de imágen en local o cloudinary (...WORK IN PROGRESS...) )
 
--Selector del tipo de medio (movie, tv, gaming y book)
+-Selector del tipo de medio (MOVIE(cine), TV(televisión o programas televisivos), GAMING(juegos o multimedia) y BOOK(Literatura,comics...etc))
 
 -Título del medio donde aparece el personaje
 
@@ -133,7 +133,7 @@ _________________________________________
 
 -Boton "crear card"
 
--Al pulsar botón "Crear card" se envia el formulario:
+-Al pulsar botón "Crear card" se envia un formulario donde...:
 
   --Se crean una/s nueva/s card/s en la Home (La/s última/s creada/s aparecerá/n la/s primera/s en orden de creación).
 
@@ -152,20 +152,20 @@ ________________________________________________________________________________
 
   El nombre del personaje, titulo del medio, fecha en la que se añadió la card y nombre del usuario que la creó (...WORK IN PROGRESS...)
 
--Cada elemento mostrado con estas credenciales, tendrá un botón de ELIMINAR y EDITAR (funciones de "Mi perfil" o votar "Me gusta", se mantienen)  solo visible para el administrador.
+-Cada elemento mostrado en esa lista, tendrá un botón de ELIMINAR y EDITAR.
 
 -Al pulsar ELIMINAR:
   La card se eliminará permanentemente de la página y de la base de datos.
 
 -Al pulsar EDITAR: 
-  Se accede al formulario "Editar Card" (parecido al formulario de creación, pero con los datos de la card que queramos modificar ya incluidos en los inputs), donde podemos modificar la card que queramos 
+  Se accede al formulario "Editar Card" (parecido al formulario de creación, pero con los datos de la card que queremos modificar ya incluidos en los inputs), donde podemos modificar los datos de la card 
   y luego pulsando el botón "Guardar cambios", guardaremos la card en la Home, con los cambios que se hayan realizado.
 ______________________________________________________________________________________________________________________________________
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- SISTEMA DE LIKES --
 
--Cada card en la Home, muestra un contador con el numero total de likes que esa card ha recibido por parte de todos los usuarios registrados en la página y un boton "Me gusta" para votar.
+-Cada card en la Home, muestra un contador con el numero total de likes que esa card ha recibido por parte de todos los usuarios registrados en la página y un boton de "Me gusta", para votar.
 
 - RECUERDA: El botón "Me gusta" solo es funcional al estar registrado y logeado.
 
