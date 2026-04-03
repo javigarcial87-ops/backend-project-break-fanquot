@@ -105,7 +105,9 @@ ________________________________________________________________________________
 
 
 
---------------------------------------   ROLES   ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------                ROLES                         ----------------------------------------------------------------------------------------------------
 
 
 __________________________________________________________________________________________
@@ -117,9 +119,10 @@ las flechas de paginación, explorar el contenido disponible.
 
 _________________________________________________________________________________________
 
+
 -- USUARIO --
 
--Usuario registrado y logeado podrá:
+-Usuario registrado y logeado puede:
 
 -Dar like a las cards.
 
@@ -148,7 +151,7 @@ ________________________________________________________________________________
 
 -Al pulsar botón "Crear card" se envia un formulario donde...:
 
-  --Se crean una/s nueva/s card/s en la Home (La/s última/s card/s creada/s aparecerá/n la/s primera/s en orden de creación).
+  --Se crean un/as nueva/s card/s en la Home (La/s última/s card/s creada/s aparecerá/n la/s primera/s en orden de creación).
 
   --Se guardará la información de la/s card/s creada/s en la base de datos principal (MongoDB Atlas).
 
@@ -157,17 +160,17 @@ ________________________________________________________________________________
 
 *-- ADMINISTRADOR
 
--Administrador logeado mediante credenciales específicas, puede acceder a propiedades exclusivas y tener un control total del contenido.
+-Administrador logeado mediante credenciales específicas, puede acceder a propiedades exclusivas y tener un control total del contenido de la aplicación.
 
 -El administrador al logarse:
 
 - Accede a un "Panel de administrador" donde:
-  Aparecerá un input buscador que al escribir el nombre o título del medio, aparecerá una lista de coincidencias disponibles, y mostrará por cards:
+  Aparecerá un input buscador que al escribir el nombre o título del medio, aparecerá una lista de coincidencias disponibles, y mostrará las cards que coincidan con su busqueda:
 
   -El nombre del personaje
-  -Titulo del medio
+  -Titulo del medio donde aparece el personaje
   -Fecha en la que se creó la card 
-  -Nombre del usuario que la creó (...WORK IN PROGRESS...)
+  -Nombre del usuario que creó la card (...WORK IN PROGRESS...)
 
 -Cada elemento mostrado en esa lista, tiene un botón de ELIMINAR y EDITAR.
 
@@ -179,11 +182,11 @@ ________________________________________________________________________________
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
--- EL SISTEMA DE LIKES --
+-- EL SÍSTEMA DE LIKES --
 
--Cada card en la Home, tiene un contador con el numero total de likes acumulados que esa card ha recibido por parte de todos los usuarios registrados en la página.
+-Cada card de la Home, tiene un contador con el numero total de likes acumulados que esa card ha recibido por parte de todos los usuarios registrados en la página.
 
- También cuenta con un boton de "Me gusta", para votar sus favoritas.
+ También cuenta con un boton de "Me gusta", para votar.
 
 - RECUERDA: El botón "Me gusta" solo es funcional al estar registrado y logeado.
 
