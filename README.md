@@ -146,11 +146,12 @@ ________________________________________________________________________________
 
   --Se guardará la información de la card creada por usuario en la base de datos (MongoDB Atlas).
 
-_____________________________________________________________________________________________________________________________________________________________________________________________________________
+____________________________________________________________________________________________________________________________________________________________________________________________________
+
 
 *-- ADMINISTRADOR
 
--Administrador logeado mediante credenciales específicas, puede acceder a propiedades exclusivas.
+-Administrador logeado mediante credenciales específicas, puede acceder a propiedades exclusivas y tener un control total del contenido.
 
 -El administrador al logarse:
 
@@ -159,25 +160,23 @@ ________________________________________________________________________________
 
   El nombre del personaje, titulo del medio, fecha en la que se añadió la card y nombre del usuario que la creó (...WORK IN PROGRESS...)
 
--Cada elemento mostrado en esa lista, tendrá un botón de ELIMINAR y EDITAR.
+-Cada elemento mostrado en esa lista, tiene un botón de ELIMINAR y EDITAR.
 
 -Al pulsar ELIMINAR:
   La card se eliminará permanentemente de la página y de la base de datos.
 
 -Al pulsar EDITAR: 
-  Se accede al formulario "Editar Card" (parecido al formulario de creación, pero con los datos de la card que queremos modificar ya incluidos en los inputs), donde podemos modificar los datos de la card 
-  y luego pulsando el botón "Guardar cambios", guardaremos la card en la Home, con los cambios que se hayan realizado.
+  Se accede al formulario "Editar Card" (parecido al formulario de creación, pero con los datos de la card que queremos modificar ya incluidos en los inputs), donde podemos modificar los datos de la card y luego pulsando el botón "Guardar cambios", guardaremos la card en la Home, con los cambios que se hayan realizado.
 ______________________________________________________________________________________________________________________________________
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- SISTEMA DE LIKES --
 
--Cada card en la Home, muestra un contador con el numero total de likes que esa card ha recibido por parte de todos los usuarios registrados en la página y un boton de "Me gusta", para votar.
+-Cada card en la Home, tiene un contador con el numero total de likes que esa card ha recibido por parte de todos los usuarios registrados en la página y un boton de "Me gusta", para votar.
 
 - RECUERDA: El botón "Me gusta" solo es funcional al estar registrado y logeado.
 
--Cada usuario registrado y logeado, solo puede votar like una vez por card, al pulsar una segunda vez el boton de "Me gusta" sobre la misma card que acaba de votar, eliminará su voto, y se eliminará tambien esa card
-  guardada en "Mi perfíl".
+-Cada usuario registrado y logeado, solo puede votar "Me gusta" una vez por card, al pulsar una segunda vez el boton de "Me gusta" sobre la misma card que ya ha votado, eliminará su voto, y se eliminará tambien esa card guardada en "Mi perfíl".
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
