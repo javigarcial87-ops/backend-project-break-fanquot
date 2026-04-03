@@ -195,8 +195,9 @@ ________________________________________________________________________________
 
 - RECUERDA: El botón "Me gusta" solo es funcional al estar registrado y logeado.
 
--Cada usuario registrado y logeado, solo puede votar "Me gusta" una vez por card. 
- Sí al pulsar una segunda vez el boton de "Me gusta" sobre la misma card que ese usuario logeado ya votó, eliminará su voto, y eliminará tambien esa card guardada en el apartado "Mi perfíl".
+-Cada usuario registrado y logeado, solo puede votar "Me gusta" una vez por cada card. 
+ Sí al pulsar una segunda vez el boton de "Me gusta" sobre la misma card que ese usuario logeado ya votó, eliminará su voto, y eliminará tambien esa card guardada en el apartado 
+ "Mi perfíl".
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
