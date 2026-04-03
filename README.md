@@ -123,7 +123,7 @@ ________________________________________________________________________________
 -Acceso al formulario de creación.
 
 -Un menú "Mi perfil" en el navbar, donde aparecen guardadas las cards a las que el usuario haya dado "Me gusta" y un registro
-  de las cards que haya creado.
+  de las cards que dicho usuario haya creado.
 
 
 
