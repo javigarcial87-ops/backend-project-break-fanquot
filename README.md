@@ -82,30 +82,14 @@ Cada "Card" cuenta con la siguiente información:
 
 - Un sistema de paginación simple al final de la lista de cards de la Home, para navegar manualmente por el contenido.
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-________________________ACCESOS DE PRUEBA_______________________________________________________________________________________________________________________
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 AUTENTIFICACIÓN
 
 * Administrador
 * Usuario
-
-Credenciales de prueba: en el navbar, pulsa "LOGIN" e introduce estas credenciales de prueba.
-
---USUARIO (de prueba, ya registrado)
-    email: yo@.es
-    pass: 1234
-
---ADMIN (logeado con estas credenciales)
-    email: administrador@fanquot.com
-    pass: 123456
-
-Tambien se puede probar a registar un nuevo usuario (en el navbar, "REGISTRAR") y usar esas credenciales para acceder al contenido (solo como usuario).
-___________________________________________________________________________________________________________________________________________________________________
-
-
 
 
 
