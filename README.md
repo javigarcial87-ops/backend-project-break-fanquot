@@ -176,16 +176,16 @@ ________________________________________________________________________________
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+-- EL SISTEMA DE LIKES --
 
+-Cada card en la Home, tiene un contador con el numero total de likes acumulados que esa card ha recibido por parte de todos los usuarios registrados en la página.
 
-
--- SISTEMA DE LIKES --
-
--Cada card en la Home, tiene un contador con el numero total de likes que esa card ha recibido por parte de todos los usuarios registrados en la página y un boton de "Me gusta", para votar.
+ También cuenta con un boton de "Me gusta", para votar sus favoritas.
 
 - RECUERDA: El botón "Me gusta" solo es funcional al estar registrado y logeado.
 
--Cada usuario registrado y logeado, solo puede votar "Me gusta" una vez por card, al pulsar una segunda vez el boton de "Me gusta" sobre la misma card que ya ha votado, eliminará su voto, y se eliminará tambien esa card guardada en "Mi perfíl".
+-Cada usuario registrado y logeado, solo puede votar "Me gusta" una vez por card. 
+ Sí al pulsar una segunda vez el boton de "Me gusta" sobre la misma card que ese usuario logeado ya votó, eliminará su voto, y eliminará tambien esa card guardada en el apartado "Mi perfíl".
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
