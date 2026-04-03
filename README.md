@@ -36,14 +36,16 @@ Render
 ____________________________________________________________________________________________________________________________________
 
 
-El proyecto estará dividido en dos repositorios en GitHub (https://github.com/javigarcial87-ops?tab=repositories)
+El proyecto está dividido en dos repositorios de GitHub (https://github.com/javigarcial87-ops?tab=repositories)
 
 
 -- FRONTEND/   → React + Vite            https://github.com/javigarcial87-ops/frontend-project-break-fanquot
 
 -- BACKEND/    → Node.js + Express       https://github.com/javigarcial87-ops/backend-project-break-fanquot
 
-Y dos links DEPLOY
+
+
+-- LINKS DEPLOY --
 
 
 -- Vercel frontend DEPLOY: 
@@ -72,9 +74,9 @@ Cada "Card" cuenta con la siguiente información:
 
 - Frase o cita famosa del personaje
 
-- Likes totales de la card, recibidos por los usuarios registrados en la página
+- Contador con likes totales de la card, recibidos por los usuarios registrados en la página
 
-- Botón "Me gusta" para dar like a la card (solo será funcional al estar registrado y logeado)
+- Botón de "Me gusta" para dar like a la card (solo funcional al estar registrado y logeado)
 
 - Un sistema de paginación simple al final de la lista de cards de la Home, para navegar manualmente por el contenido.
 
