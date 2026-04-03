@@ -128,7 +128,8 @@ ________________________________________________________________________________
 
 
 -- EL FORMULARIO DE CREACIÓN --
-(donde el usuario podrá crear mediante inputs las cards), (limitación de creación de número de cards por usuario (...WORK IN PROGRESS...)) --
+
+(donde el usuario puede crear mediante inputs las cards), (limitación de creación de número de cards por usuario (...WORK IN PROGRESS...)) --
 
 -Nombre del personaje
 
@@ -146,7 +147,7 @@ ________________________________________________________________________________
 
   --Se crean una/s nueva/s card/s en la Home (La/s última/s card/s creada/s aparecerá/n la/s primera/s en orden de creación).
 
-  --Se guardará la información de la card creada en la base de datos (MongoDB Atlas).
+  --Se guardará la información de la/s card/s creada/s en la base de datos principal (MongoDB Atlas).
 
 ____________________________________________________________________________________________________________________________________________________________________________________________________
 
@@ -160,12 +161,15 @@ ________________________________________________________________________________
 - Accede a un "Panel de administrador" donde:
   Aparecerá un input buscador que al escribir el nombre o título del medio, aparecerá una lista de coincidencias disponibles, y mostrará por cards:
 
-  El nombre del personaje, titulo del medio, fecha en la que se añadió la card y nombre del usuario que la creó (...WORK IN PROGRESS...)
+  -El nombre del personaje
+  -Titulo del medio
+  -Fecha en la que se creó la card 
+  -Nombre del usuario que la creó (...WORK IN PROGRESS...)
 
 -Cada elemento mostrado en esa lista, tiene un botón de ELIMINAR y EDITAR.
 
 -Al pulsar ELIMINAR:
-  La card se eliminará permanentemente de la página y de la base de datos.
+  La card se elimina permanentemente de la página y de la base de datos.
 
 -Al pulsar EDITAR: 
   Se accede al formulario "Editar Card" (parecido al formulario de creación, pero con los datos de la card que queremos modificar ya incluidos en los inputs), donde podemos modificar los datos de la card y luego pulsando el botón "Guardar cambios", guardaremos la card en la Home, con los cambios que se hayan realizado.
