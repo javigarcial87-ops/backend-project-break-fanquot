@@ -57,7 +57,9 @@ https://backend-project-break-fanquot.onrender.com
 
 ______________________________________________________________________________________________________________________________________
 
---------------------- FUNCIONALIDADES --------------------
+
+
+--------------------- FUNCIONALIDADES -------------------------------------------
 
 La aplicación mostrará una colección de cards disponibles en la Home y un destacado en su encabezado que muestra la card más votada, según el número de likes de los usuarios registrados.
 Cuenta también con un input de busqueda para buscar cards según el nombre de personaje o título de medio donde aparece tal personaje y poder explorar el contenido de la página.
@@ -114,7 +116,7 @@ ________________________________________________________________________________
 
 -- VISITANTE O invitado (GUEST) --
 
-Accede a la pagina mediante un link y en la Home puede ver las cards que hay hasta el momento y en el input de busqueda, buscar según nombre de personaje o título de medio y mediante
+Accede a la pagina mediante un link y en la Home puede ver las cards que hay hasta el momento, en el input de busqueda, buscar según nombre de personaje o título de medio, o mediante
 las flechas de paginación, explorar el contenido disponible.
 
 _________________________________________________________________________________________
@@ -122,7 +124,9 @@ ________________________________________________________________________________
 
 -- USUARIO --
 
--Usuario registrado y logeado puede:
+-Usuario, una vez registrado y logeado:
+
+-En el navbar aparece un saludo junto al nombre de usuario y puede:
 
 -Dar like a las cards.
 
@@ -149,9 +153,9 @@ ________________________________________________________________________________
 
 -Boton "crear card"
 
--Al pulsar botón "Crear card" se envia un formulario donde...:
+-Al pulsar botón "Crear card":
 
-  --Se crean un/as nueva/s card/s en la Home (La/s última/s card/s creada/s aparecerá/n la/s primera/s en orden de creación).
+  --Se crea/n un/as nueva/s card/s en la Home (La/s última/s card/s creada/s aparecerá/n la/s primera/s en orden de creación).
 
   --Se guardará la información de la/s card/s creada/s en la base de datos principal (MongoDB Atlas).
 
@@ -165,7 +169,8 @@ ________________________________________________________________________________
 -El administrador al logarse:
 
 - Accede a un "Panel de administrador" donde:
-  Aparecerá un input buscador que al escribir el nombre o título del medio, aparecerá una lista de coincidencias disponibles, y mostrará las cards que coincidan con su busqueda:
+  Aparecerá un input de búqueda que al escribir el nombre o título del medio, aparecerá una lista de coincidencias disponibles, y mostrará las cards que coincidan con su busqueda
+  mostrando:
 
   -El nombre del personaje
   -Titulo del medio donde aparece el personaje
