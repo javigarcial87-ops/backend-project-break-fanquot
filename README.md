@@ -112,7 +112,8 @@ ________________________________________________________________________________
 
 -- VISITANTE O invitado (GUEST) --
 
-Accede a la pagina mediante un link y en la Home puede ver las cards que hay hasta el momento y en el input de busqueda, buscar según nombre de personaje o título de medio y explorar el contenido disponible.
+Accede a la pagina mediante un link y en la Home puede ver las cards que hay hasta el momento y en el input de busqueda, buscar según nombre de personaje o título de medio y mediante
+las flechas de paginación, explorar el contenido disponible.
 
 _________________________________________________________________________________________
 
