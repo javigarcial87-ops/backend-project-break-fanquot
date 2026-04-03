@@ -105,7 +105,14 @@ ________________________________________________________________________________
 
 --------------------------------------   ROLES   ---------------------------------------------------------------------------------------------------------------------------------------------------
 
-_________________________________________
+
+__________________________________________________________________________________________
+
+-- VISITANTE --
+
+Accede a la pagina mediante un link y en la Home puede ver las cards que hay hasta el momento, en el input de busqueda, buscar según nombre de personaje o título de medio y explorar el contenido disponible.
+
+_________________________________________________________________________________________
 
 -- USUARIO --
 
@@ -137,7 +144,7 @@ _________________________________________
 
   --Se crean una/s nueva/s card/s en la Home (La/s última/s creada/s aparecerá/n la/s primera/s en orden de creación).
 
-  --Se guardará la información de la card creada en la base de datos (MongoDB Atlas).
+  --Se guardará la información de la card creada por usuario en la base de datos (MongoDB Atlas).
 
 _____________________________________________________________________________________________________________________________________________________________________________________________________________
 
